@@ -37,6 +37,13 @@ export default defineConfig({
       }
   },
   build: {
-      outDir: "../backend/src/main/resources/static"
+      outDir: "../backend/src/main/resources/static",
+      emptyOutDir: true,
+      rollupOptions: {
+          input: {
+              index: resolve(__dirname, 'index.html'),
+              console: resolve(__dirname, 'console.html')
+          }
+      }
   }
 })

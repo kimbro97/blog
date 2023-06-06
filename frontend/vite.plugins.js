@@ -6,6 +6,7 @@ export function CustomPagePlugin(options) {
                 if (req.url === '/') {
                     req.url = `/${options.pages.index.filename}`;
                 } else if (req.url.startsWith('/console')) {
+
                     req.url = `/${options.pages.console.filename}`;
                 }
                 await next();

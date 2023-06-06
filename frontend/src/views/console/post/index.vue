@@ -6,7 +6,7 @@
 
 <script>
 import { mdiMenu } from '@mdi/js';
-import consoleApp from '../../components/console/console-app.vue';
+import consoleApp from '@/components/console/console-app.vue';
 
 export default {
     components: {
