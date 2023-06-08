@@ -1,5 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
-import Pages from 'vite-plugin-pages'
+// import Pages from 'vite-plugin-pages'
 import { cpa } from "./vite.plugins";
 
 import { defineConfig } from 'vite'
@@ -10,12 +10,12 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [
       vue(),
-      Pages({
-          dirs: [
-              { dir: resolve(__dirname, './src/views/client'), baseRoute: '' },
-              { dir: resolve(__dirname, './src/views/console'), baseRoute: 'console' }
-          ]
-      }),
+      // Pages({
+      //     dirs: [
+      //         { dir: resolve(__dirname, './src/views/client'), baseRoute: '' },
+      //         { dir: resolve(__dirname, './src/views/console'), baseRoute: 'console' }
+      //     ]
+      // }),
       cpa({
           pages: {
               index: {

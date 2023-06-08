@@ -1,1 +1,0 @@
-import{o as a,c as s,u as t,R as c,a as o,b as n,S as r,r as p,d as u,e as i}from"./svg-icon-23e6d18a.js";const m={__name:"app.client",setup(f){return(v,l)=>(a(),s(t(c)))}},e=o(m),_=n({components:u,directives:i});e.component("SvgIcon",r);e.use(p);e.use(_);e.mount("#app");

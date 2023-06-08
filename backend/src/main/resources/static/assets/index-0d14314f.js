@@ -1,1 +1,0 @@
-import{_ as o,s as n,f as t,o as c,c as s}from"./svg-icon-23e6d18a.js";const a={components:{clientPage:n}};function p(r,_,i,f,l,m){const e=t("client-page");return c(),s(e)}const u=o(a,[["render",p]]);export{u as default};
