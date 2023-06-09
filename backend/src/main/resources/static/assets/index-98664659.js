@@ -1,1 +1,0 @@
-import{c as o}from"./ClientPage-bc5f392c.js";import{_ as t,f as n,o as c,c as s}from"./svg-icon-68e796f9.js";import"./mdi-4222cd55.js";const r={components:{clientPage:o}};function a(p,_,i,m,f,l){const e=n("client-page");return c(),s(e)}const $=t(r,[["render",a]]);export{$ as default};

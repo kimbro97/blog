@@ -1,0 +1,1 @@
+import{_ as e,m as s,f as t,o as n,c as a,w as c,i as r}from"./svg-icon-40f7c016.js";import{c as p}from"./console-app-4aed3c2a.js";const _={components:{consoleApp:p},data(){return{path:s,drawer:!0}}},d=r("div",null,"sss",-1);function l(i,m,u,f,x,h){const o=t("console-app");return n(),a(o,null,{default:c(()=>[d]),_:1})}const B=e(_,[["render",l]]);export{B as default};
