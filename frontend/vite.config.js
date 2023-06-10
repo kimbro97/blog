@@ -6,9 +6,8 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
+    plugins: [
       vue(),
       Pages({
           dirs: [
@@ -30,13 +29,13 @@ export default defineConfig({
               }
           },
       })
-  ],
-  resolve: {
+    ],
+    resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
-  },
-  build: {
+    },
+    build: {
       outDir: "../backend/src/main/resources/static",
       emptyOutDir: true,
       rollupOptions: {
@@ -45,5 +44,5 @@ export default defineConfig({
               console: resolve(__dirname, 'console.html')
           }
       }
-  }
+    },
 })
