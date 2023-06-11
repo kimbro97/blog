@@ -1,4 +1,4 @@
-package blog.backend.domain;
+package blog.backend.entity;
 
 import lombok.Getter;
 import lombok.Setter;
