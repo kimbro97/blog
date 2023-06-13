@@ -1,6 +1,6 @@
 <template>
     <console-app></console-app>
-            <console-sign-in></console-sign-in>
+<!--            <console-sign-in></console-sign-in>-->
 </template>
 
 <script>
