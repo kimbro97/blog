@@ -1,9 +1,12 @@
 <template>
-	<console-bar v-model="drawer"></console-bar>
-	<console-drawer v-model="drawer"></console-drawer>
-	<v-main style="height: 400px;">
-            <slot />
-    </v-main>
+    <v-app>
+        <console-bar v-model="drawer"></console-bar>
+        <console-drawer v-model="drawer"></console-drawer>
+        <v-main style="height: 400px;">
+                <slot />
+        </v-main>
+    </v-app>
+
 </template>
 
 <script>
