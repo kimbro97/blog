@@ -1,5 +1,5 @@
 <template>
-
+    <component :is="display"/>
 </template>
 
 <script>
@@ -16,6 +16,11 @@ export default {
         return {
             path: mdiMenu,
             drawer: true
+        }
+    },
+    computed: {
+        display() {
+            return () => import("./post/index.vue");
         }
     }
 };
