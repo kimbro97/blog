@@ -2,8 +2,10 @@
     <v-app>
         <console-bar v-model="drawer"></console-bar>
         <console-drawer v-model="drawer"></console-drawer>
-        <v-main style="height: 400px;">
+        <v-main>
+            <v-container fluid fill-height>
                 <slot />
+            </v-container>
         </v-main>
     </v-app>
 

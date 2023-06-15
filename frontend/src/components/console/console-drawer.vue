@@ -7,7 +7,7 @@
                 </template>
                 <v-divider/>
                 <div style="background-color: #2A3140">
-                    <v-list-item v-for="(child, index) in item.childs" :key="index" :title="child.title" :to="child.path" base-color="white"></v-list-item>
+                    <v-list-item v-for="(child, i) in item.childs" :key="i" :title="child.title" :to="child.path" base-color="white"></v-list-item>
                 </div>
                 <v-divider/>
             </v-list-group>

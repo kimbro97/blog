@@ -1,3 +1,5 @@
+import './assets/console.css'
+
 import { createApp } from 'vue'
 import App from './app.console.vue'
 import router from './router'
