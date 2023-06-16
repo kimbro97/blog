@@ -41,7 +41,7 @@ export default {
                         },
                         {
                             title: "시리즈",
-                            path: "/console/postㄴ"
+                            path: "/console/post/series"
                         },
                     ]
                 }
