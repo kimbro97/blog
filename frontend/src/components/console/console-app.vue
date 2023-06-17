@@ -4,7 +4,7 @@
         <console-drawer v-model="drawer"></console-drawer>
         <v-main>
             <v-container fluid fill-height>
-                <slot />
+                <slot></slot>
             </v-container>
         </v-main>
     </v-app>
