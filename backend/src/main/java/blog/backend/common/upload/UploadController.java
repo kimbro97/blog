@@ -11,6 +11,8 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @Slf4j
 @RestController
@@ -25,7 +27,8 @@ public class UploadController {
         if (!file.isEmpty()) {
             fullPath = fullPath + "/main/resources/static/post/" + file.getOriginalFilename();
             log.info("파일 저장 fullPath={}", fullPath);
-            file.transferTo(new File(fullPath));
+            Path path = Paths.get(fullPath).toAbsolutePath();
+            file.transferTo(path.toFile());
         }
 
         return fullPath;
