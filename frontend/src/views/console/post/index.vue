@@ -3,7 +3,7 @@
         <v-layout justify-center>
             <v-responsive max-width="1280px" width="100%" height="100%">
                 <v-row class="mt-8" justify="center" align="center">
-                    <v-col cols="auto">탈퇴회원 목록</v-col>
+                    <v-col cols="auto">게시물 관리</v-col>
                     <v-spacer></v-spacer>
                 </v-row>
             </v-responsive>

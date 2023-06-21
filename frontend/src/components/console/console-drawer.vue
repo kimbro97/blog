@@ -7,7 +7,7 @@
                 </template>
                 <v-divider/>
                 <div style="background-color: #2A3140">
-                    <v-list-item v-for="(child, i) in item.childs" :key="i" :title="child.title" :to="child.path" base-color="white"></v-list-item>
+                    <v-list-item v-for="(child, i) in item.childs" :key="i" :title="child.title" @click="navigate(child)" base-color="white"></v-list-item>
                 </div>
                 <v-divider/>
             </v-list-group>
@@ -37,11 +37,15 @@ export default {
                     childs: [
                         {
                             title: "블로그",
-                            path: "/console/post"
+                            route: {
+                                path: "/console/post"
+                            }
                         },
                         {
                             title: "시리즈",
-                            path: "/console/post/series"
+                            route: {
+                                path: "/console/post/series"
+                            }
                         },
                     ]
                 }
@@ -52,6 +56,11 @@ export default {
                 ['Settings', 'mdi-cog-outline'],
             ],
 		}
-	}
+	},
+    methods: {
+        navigate(child) {
+            if(child.route) this.$router.push(child.route);
+        },
+    }
 }
 </script>

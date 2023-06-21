@@ -1,8 +1,10 @@
 <template>
-    <console-app>
-        <router-view/>
-    </console-app>
-    <console-sign-in />
+    <div id="app">
+        <console-app>
+            <router-view/>
+        </console-app>
+    <!--    <console-sign-in />-->
+    </div>
 </template>
 
 <script>
