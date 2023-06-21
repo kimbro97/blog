@@ -1,6 +1,7 @@
 package blog.backend.common.upload;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,16 +20,18 @@ import java.nio.file.Paths;
 @RequestMapping("/api")
 public class UploadController {
 
+    @Value("${file.dir}")
+    private String fileDir;
+
     @PostMapping("/upload")
     public String fileUpload(@RequestParam MultipartFile file, HttpServletRequest request) throws IOException {
         log.info("request={}", request);
         log.info("file={}", file);
         String fullPath = "";
         if (!file.isEmpty()) {
-            fullPath = fullPath + "/main/resources/static/post/" + file.getOriginalFilename();
+            fullPath = fileDir + file.getOriginalFilename();
             log.info("파일 저장 fullPath={}", fullPath);
-            Path path = Paths.get(fullPath).toAbsolutePath();
-            file.transferTo(path.toFile());
+            file.transferTo(new File(fullPath));
         }
 
         return fullPath;
