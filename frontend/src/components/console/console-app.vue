@@ -2,7 +2,7 @@
     <v-app>
         <console-bar v-model="drawer"></console-bar>
         <console-drawer v-model="drawer"></console-drawer>
-        <v-main>
+        <v-main class="custom-background">
             <v-container fluid fill-height>
                 <slot></slot>
             </v-container>
@@ -29,3 +29,9 @@ export default {
 }
 
 </script>
+
+<style>
+.custom-background {
+    background-color: #EDF0F5;
+}
+</style>
