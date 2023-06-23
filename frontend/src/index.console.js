@@ -29,8 +29,6 @@ const vuetify = createVuetify({
                     secondary: '#414c60',
                     accent: colors.blue.lighten1,
                     "app-bar": '#2a3141',
-                    content: "#EDF0F5",
-                    anchor: '#333',
                 }
             }
         }
